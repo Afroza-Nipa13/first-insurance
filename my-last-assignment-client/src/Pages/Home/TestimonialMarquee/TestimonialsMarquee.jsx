@@ -18,11 +18,11 @@ const TestimonialsMarquee = () => {
   if (isLoading) return <LoadingSpinner></LoadingSpinner>
 
   return (
-    <div className=" py-10 px-8 rounded my-20">
+    <div className=" py-10 rounded my-20">
       <Helmet>
         <title>Home | FIRST Life Insurance</title>
       </Helmet>
-      <div className="max-w-7xl mx-auto text-center mb-10">
+      <div className="max-w-11/12 mx-auto text-center mb-10">
         <h2 className="text-5xl font-bold text-center  text-primary ">What   <span className='text-gray-600'>Our</span> Customers Says </h2>
         <p className="text-gray-400 max-w-2xl mx-auto">
           Our customers trust us to protect their future with reliable and affordable insurance plans. Their stories reflect our commitment to quality service, financial security, and peace of mind — because your satisfaction is our greatest achievement.

@@ -9,7 +9,7 @@ const BlogCard = ({ blog }) => {
     const navigate =useNavigate()
     const { _id, title, content, image, author, publishDate, visitCount } = blog;
 
-
+    
     const handleReadMore = async (id) => {
         
         await axiosSecure.patch(`/blogs/${id}/visit`);

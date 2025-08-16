@@ -1,9 +1,9 @@
 import axios from 'axios';
 import React from 'react';
 // http://localhost:3000
-// https://insurance-server-sigma.vercel.app
+//https://insurance-server-sigma.vercel.app
 const axiosSecure = axios.create({
-  baseURL: 'https://insurance-server-sigma.vercel.app',
+  baseURL: 'http://localhost:3000',
   withCredentials:true
   
 });

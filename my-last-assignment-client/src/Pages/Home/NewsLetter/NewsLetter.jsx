@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 
 import toast from 'react-hot-toast';
 import useAxiosSecure from '../../../Hooks/useAxiosSecure';
+import { easeOut, motion } from "framer-motion";
 import Swal from 'sweetalert2';
 import newsletter from '../../../assets/clients/newsletter.webp'
 
@@ -26,23 +27,25 @@ const NewsLetter = () => {
   };
 
   return (
-    <div className="px-4 py-16 mx-auto sm:max-w-xl bg-white md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20">
-      
-      <div className="flex flex-col max-w-screen-lg overflow-hidden bg-white rounded shadow-sm lg:flex-row sm:mx-auto">
-        {/* Left Image */}
-        <div className="relative lg:w-2/3 bg-white">
-          <img
-            src={newsletter}
-            alt="Newsletter"
-            className="object-cover mt-30 w-full lg:absolute lg:h-auto animate-float"
-          />
+    <div className="py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-full md:px-20 lg:px-8 lg:py-20">
 
+      <div className="flex flex-col max-w-screen-lg overflow-hidden  lg:flex-row sm:mx-auto">
+        {/* Left Image */}
+        <div className="relative lg:w-2/3">
+          <motion.img
+            src={newsletter}
+            alt="Afroza Akter"
+            animate={{ y: [50, 100, 50] }}
+            transition={{ duration: 10, repeat: Infinity }}
+           className="object-cover mt-30 w-full lg:absolute lg:h-auto animate-float" />
           
-         
+
+
+
         </div>
 
         {/* Right Form */}
-        <div className="flex flex-col justify-center p-8 bg-white  lg:p-16 lg:pl-10 lg:w-1/2">
+        <div className="flex flex-col justify-center p-8 bg-base-100 border border-base-200 rounded-3xl shadow-lg  lg:p-16 lg:pl-10 lg:w-1/2">
           <div>
             <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-gray-700 uppercase rounded-full bg-teal-accent-400">
               Subscribe Now

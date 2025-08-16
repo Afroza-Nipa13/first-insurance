@@ -21,11 +21,11 @@ const LatestBlogs = () => {
   { isError && <Error></Error> }
   return (
     <div>
-      <section className="py-16 px-4 md:px-10">
+      <section className="py-16 px-4 md:px-0">
         <Helmet>
           <title>Home | FIRST Life Insurance</title>
         </Helmet>
-        <div className="max-w-6xl mx-auto text-center mb-12">
+        <div className="max-w-11/12 mx-auto text-center mb-12">
           <h2 className="text-5xl font-bold mb-4 text-primary">Latest Blogs <span className='text-gray-500'>&</span> Articles</h2>
           <p className="text-gray-600">Stay informed with our latest updates and expert tips.</p>
         </div>

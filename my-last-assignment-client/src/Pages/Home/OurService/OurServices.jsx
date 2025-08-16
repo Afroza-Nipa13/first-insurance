@@ -32,8 +32,8 @@ const OurServices = () => {
   {isLoading && <LoadingSpinner></LoadingSpinner>}
   {isError && <Error></Error>}
   return (
-    <section className="py-16 px-4 md:px-10 bg-linear-to-bl from-pink-900 to-teal-800 rounded-3xl my-30">
-      <div className="max-w-7xl mx-auto text-center mb-10">
+    <section className="py-16 px-4 md:px-10 bg-linear-to-bl from-pink-900 to-teal-950 rounded-3xl my-30">
+      <div className="max-w-11/12 mx-auto text-center mb-10">
         <h2 className="text-5xl mb-8 font-bold text-center text-shadow-lg text-yellow-200 ">Popular  <span className='text-gray-400'>Policies</span> </h2>
         <p className="text-gray-200 max-w-2xl mx-auto">
           Discover our most purchased insurance policies tailored for your needs. Select your plan and get a personalized quote today.

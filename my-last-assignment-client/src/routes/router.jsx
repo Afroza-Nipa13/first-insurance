@@ -39,6 +39,7 @@ import AdminRoute from './AdminRoute';
 import AdminAgentRoute from './AdminAgentRoute';
 import AgentRoute from './AgentRoute';
 import ApprovedUsers from '../Component/Dashboard/AdminMenu/ApprovedUsers/ApprovedUsers';
+import LoadingSpinner from '../Shared/LoadingSpinner';
 
 
 
@@ -46,6 +47,7 @@ export const router = createBrowserRouter([
     {
         path: '/',
         Component: MainLayOuts,
+        hydrateFallbackElement:<LoadingSpinner/>,
         errorElement: <Error />,
         children: [
             {
