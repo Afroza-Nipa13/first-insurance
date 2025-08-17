@@ -9,6 +9,8 @@ import NewsLetter from './NewsLetter/NewsLetter';
 import MeetOurAgents from './OurAgents/MeetOurAgents';
 import { Helmet } from 'react-helmet-async';
 import ClientsMarquee from './ClientsMarquee/ClientsMarquee';
+import SalesPromotion from './Sales/SalesPromotion';
+
 
 const Home = () => {
 
@@ -22,6 +24,7 @@ const Home = () => {
             <Banner></Banner>
             <Container>
                 <OurServices></OurServices>
+                <SalesPromotion/>
                 <TestimonialsMarquee></TestimonialsMarquee>
                 <LatestBlogs></LatestBlogs>
                 <NewsLetter></NewsLetter>

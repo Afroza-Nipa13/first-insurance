@@ -40,6 +40,7 @@ import AdminAgentRoute from './AdminAgentRoute';
 import AgentRoute from './AgentRoute';
 import ApprovedUsers from '../Component/Dashboard/AdminMenu/ApprovedUsers/ApprovedUsers';
 import LoadingSpinner from '../Shared/LoadingSpinner';
+import SalesPromotion from '../Pages/Home/Sales/SalesPromotion';
 
 
 
@@ -84,6 +85,10 @@ export const router = createBrowserRouter([
             {
                 path: 'blogs',
                 Component: Blogs
+            },
+            {
+                path:'sales',
+                Component:SalesPromotion
             },
             {
                 path: 'blogs/:id',

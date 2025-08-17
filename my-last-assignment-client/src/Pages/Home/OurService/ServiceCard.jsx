@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
+import { FaArrowRight } from 'react-icons/fa';
 
 const ServiceCard = ({ policy }) => {
   const { _id, title, description, imageUrl, purchaseCount } = policy;
@@ -23,9 +24,10 @@ const ServiceCard = ({ policy }) => {
 
       <button
         onClick={handleViewDetails}
-        className="mt-auto px-4 py-2 bg-primary text-white rounded-md hover:bg-secondary transition"
+        className="mt-auto px-4 py-2 bg-primary text-white rounded-md hover:bg-secondary transition flex items-center justify-center gap-2"
       >
         View Details
+        <FaArrowRight />
       </button>
     </div>
   );

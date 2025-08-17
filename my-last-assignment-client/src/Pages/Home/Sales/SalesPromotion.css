@@ -1,0 +1,28 @@
+.my-slider .keen-slider__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  height: 400px; /* Adjust as needed */
+}
+
+/* Example banners */
+.my-slider .keen-slider__slide--1 {
+  background-image: url('https://i.postimg.cc/qvJCHMjK/insurance.jpg');
+}
+
+.my-slider .keen-slider__slide--2 {
+  background-image: url('https://i.postimg.cc/W490vCVY/policy3.jpg');
+}
+
+.my-slider .keen-slider__slide--3 {
+  background-image: url('https://i.postimg.cc/wB30vXyc/carinsurance1.jpg');
+}
+.my-slider .keen-slider__slide--4{
+    background-image: url("https://i.postimg.cc/Hxyz0Ttr/health-Insurance.jpg");
+}
