@@ -16,7 +16,7 @@ const Home = () => {
 
     return (
 
-        <div className='pt-19 min-h-screen'>
+        <div className='pt-19 min-h-screen mt-2'>
             <Helmet>
                 <title>FIRST Life Insurance | Home</title>
                 <meta name="description" content="Welcome to FIRST Life Insurance - Your trusted partner in securing your future." />

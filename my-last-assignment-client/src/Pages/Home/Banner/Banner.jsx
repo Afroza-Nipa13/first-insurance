@@ -21,7 +21,7 @@ const Banner = () => {
             interval={3000}
         >
             {images.map((img, index) => (
-                <div key={index} className="relative h-[600px]">
+                <div key={index} className="relative h-[500px]">
                     <img
                         src={img}
                         alt={`Slide ${index + 1}`}
@@ -34,7 +34,7 @@ const Banner = () => {
                             <span className="text-4xl md:text-8xl">Today</span>
                         </h2>
                         <Link to='all-policies'>
-                        <button className="bg-primary text-white px-6 py-4 rounded-xl hover:bg-pink-600 cursor-pointer transition-all ">
+                        <button className="bg-primary  text-white px-6 py-4 rounded-xl hover:bg-pink-600 cursor-pointer transition-all ">
                             Get a Free Quote
                         </button>
                         </Link>

@@ -36,7 +36,7 @@ const FaqPage = () => {
             <div
                 data-aos="fade-up"
                 data-aos-duration="3000"
-                className="flex flex-col md:flex-row gap-4 bg-white p-8 rounded-2xl border border-gray-300">
+                className="flex flex-col md:flex-row gap-4 p-8 rounded-2xl border border-gray-300">
                 <div className="flex-1 mt-28 w-full">
                     <img src={faq} alt="" />
                 </div>
@@ -45,7 +45,7 @@ const FaqPage = () => {
                         <Disclosure key={index}>
                             {({ open }) => (
                                 <div className="border border-gray-200 rounded-xl shadow-md overflow-hidden">
-                                    <Disclosure.Button className="flex justify-between items-center w-full px-6 py-4 text-left text-lg font-medium text-gray-800 hover:bg-gray-100 transition">
+                                    <Disclosure.Button className="flex justify-between items-center w-full px-6 py-4 text-left text-lg font-medium text-gray-500 hover:bg-gray-100 transition">
                                         <span>{faq.question}</span>
                                         <ChevronUpIcon
                                             className={`w-5 h-5 transition-transform duration-300 ${open ? "rotate-180 text-primary" : "rotate-0"

@@ -6,12 +6,13 @@ import "./SalesPromotion.css"; // Custom styles
 const SalesPromotion = () => {
     const [sliderRef] = useKeenSlider({
         loop: true,
-        slides: {
-            perView: 2,
-            spacing: 15,
-        },
+        mode: "free",
+    slides: {
+      perView: 3,
+      spacing: 15,
+    },
         breakpoints: {
-            "(max-width: 768px)": {
+            "(max-width: 868px)": {
                 slides: { perView: 1, spacing: 10 },
             },
         },

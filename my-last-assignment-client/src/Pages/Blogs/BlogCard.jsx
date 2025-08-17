@@ -21,7 +21,7 @@ const BlogCard = ({ blog }) => {
         <motion.div
             whileHover={{ scale: 1.05 }}
             transition={{ type: 'spring', stiffness: 300 }}
-            className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transform duration-300"
+            className=" rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transform duration-300"
         >
             <img src={image || 'https://i.ibb.co/Y3fKn7F/default-avatar.jpg'} alt={title} className="w-full h-48 object-cover" />
             <div className="p-4 space-y-2">

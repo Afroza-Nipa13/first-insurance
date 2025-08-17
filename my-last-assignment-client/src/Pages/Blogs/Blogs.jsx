@@ -27,8 +27,8 @@ const Blogs = () => {
             </Helmet>
             <Container>
                 <div className='py-10  mx-auto mb-8'>
-                    <h2 className='text-gray-600 text-5xl font-bold mb-10 uppercase divider'>All <span className='text-primary'>Insurance </span>Blogs</h2>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 my-12">
+                    <h2 className='text-gray-600 text-5xl font-bold mt-10 mb-20 uppercase divider'>All <span className='text-primary'>Insurance </span>Blogs</h2>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {blogs.map((blog) => (
                             <BlogCard blog={blog}
                                 key={blog._id}></BlogCard>

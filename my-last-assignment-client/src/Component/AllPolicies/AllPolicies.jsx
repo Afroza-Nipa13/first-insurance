@@ -9,7 +9,7 @@ const AllPolicies = () => {
   const axios = useAxios();
   const [category, setCategory] = useState('');
   const [page, setPage] = useState(1)
-  const limit = 6;
+  const limit = 8;
 
 
   // Fetch distinct categories dynamically from backend
@@ -63,7 +63,7 @@ const AllPolicies = () => {
       {/* Category Filter Dropdown */}
       <div className="my-6 flex justify-center">
         <select
-          className="select select-bordered w-48 lg:w-3xl mb-20"
+          className="select select-bordered w-48 lg:w-2xl mb-20 py-4"
           value={category}
           onChange={e => setCategory(e.target.value)}
         >
@@ -78,7 +78,7 @@ const AllPolicies = () => {
       </div>
 
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
         {policies.map(policy => (
           <div key={policy._id} className="card bg-base-100 shadow-xl border border-gray-200">
             <figure>

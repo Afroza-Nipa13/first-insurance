@@ -83,7 +83,7 @@ const QuotePage = () => {
   if (isLoading) return <LoadingSpinner />;
 
   return (
-    <div className="max-w-xl mx-auto mt-30 rounded-2xl p-6 shadow-xl bg-white mb-10">
+    <div className="max-w-xl mx-auto mt-30 rounded-2xl p-6 shadow-xl mb-10">
       <Helmet>
         <title>Quote Page | FIRST Life Insurance</title>
       </Helmet>
@@ -212,7 +212,7 @@ const QuotePage = () => {
 
       {/* Quote Result */}
       {estimate && (
-        <div className="mt-6 p-4 bg-gray-100 rounded">
+        <div className="mt-6 p-4  rounded">
           <p><strong>Monthly Premium:</strong> ৳{CalculatePremium(estimate.age, estimate.gender, estimate.smoker, estimate.coverageAmount, policy?.basePremiumRate || 0.03).monthly}</p>
           <p><strong>Annual Premium:</strong> ৳{CalculatePremium(estimate.age, estimate.gender, estimate.smoker, estimate.coverageAmount, policy?.basePremiumRate || 0.03).annual}</p>
           <p><strong>Selected:</strong> {estimate.frequency} | ৳{estimate.premium.amount}</p>
