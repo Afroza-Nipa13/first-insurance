@@ -51,10 +51,16 @@ const Navbar = () => {
                     {/* Dropdown btn */}
                     <div
                       onClick={() => setIsOpen(!isOpen)}
-                      className='p-4 md:py-1 md:px-2 border-[1px] border-neutral-200 flex flex-row items-center gap-3 rounded-full cursor-pointer hover:shadow-md transition'
+                      className='md:p-1 p-0 m-2 md:m-0 md:py-1 md:px-2 border-[1px] border-neutral-200 flex flex-row items-center gap-3 rounded-full cursor-pointer hover:shadow-md transition'
                     >
 
+                      <input
+                          type="checkbox"
+                          value="forest"
+                          className="toggle theme-controller" />
+
                       <div className=' md:block'>
+                        
                         {/* Avatar */}
                         <img
                           className='rounded-full'

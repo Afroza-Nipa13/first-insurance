@@ -29,7 +29,7 @@ const Sidebar = () => {
 
   return (
     <>
-     
+
       {/* Small Screen Navbar */}
       <div className=' text-primary flex shadow-2xl justify-between md:hidden items-center px-4 py-2'>
         <div className='cursor-pointer font-bold'>
@@ -45,20 +45,34 @@ const Sidebar = () => {
 
         {/* Profile Picture or Menu Icon */}
         {user?.photoURL ? (
+          <div className='flex justify-center gap-2'>
+          <input
+              type="checkbox"
+              value="forest"
+              className="toggle theme-controller my-1" />
           <button onClick={handleToggle} className='focus:outline-none'>
+
             <img
               src={user.photoURL}
               alt='profile'
               className='w-8 h-8 rounded-full border border-primary'
             />
           </button>
+          </div>
         ) : (
-          <button
-            onClick={handleToggle}
-            className='mobile-menu-button focus:outline-none focus:bg-gray-200 p-2'
-          >
-            <AiOutlineBars className='h-5 w-5' />
-          </button>
+          <>
+            <input
+              type="checkbox"
+              value="forest"
+              className="toggle theme-controller" />
+            <button
+              onClick={handleToggle}
+              className='mobile-menu-button focus:outline-none focus:bg-gray-200 p-2'
+            >
+              <AiOutlineBars className='h-5 w-5' />
+            </button>
+          </>
+
         )}
       </div>
 
