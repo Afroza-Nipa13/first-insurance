@@ -66,10 +66,10 @@ const ProfilePage = () => {
 
 
     return (
-        <div className="max-w-4xl mx-auto mt-10">
+        <div className="max-w-6xl mx-auto mt-10">
             {/* Banner */}
             <div
-                className="relative w-full h-60 rounded-xl bg-no-repeat bg-center bg-contain"
+                className="relative w-full h-80 rounded-xl bg-no-repeat bg-center bg-contain"
             // style={{
             //     backgroundImage: "url('https://i.postimg.cc/Y01VsxNC/blue-3.jpg')",
             // }}
@@ -108,7 +108,7 @@ const ProfilePage = () => {
             {/* User Info */}
             <div className="mt-16 text-center">
                 <h2 className="text-2xl font-bold">{user?.displayName || "User Name"}</h2>
-                <p className="text-sm text-gray-100 mt-1 badge badge-warning">{role || "Customer"}</p>
+                <p className="text-sm text-gray-100 mt-1 uppercase badge badge-warning">{role || "Customer"}</p>
             </div>
 
             {/* Edit Form */}

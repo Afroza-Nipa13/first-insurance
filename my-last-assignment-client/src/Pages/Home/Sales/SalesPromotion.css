@@ -8,7 +8,7 @@
   color: white;
   font-size: 2rem;
   font-weight: bold;
-  height: 400px; /* Adjust as needed */
+  height: 400px; 
 }
 
 /* Example banners */
@@ -25,4 +25,24 @@
 }
 .my-slider .keen-slider__slide--4{
     background-image: url("https://i.postimg.cc/Hxyz0Ttr/health-Insurance.jpg");
+}
+
+/* Overlay text with blur */
+.overlay-text {
+  background: rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(6px);      
+  color: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  max-width: 60%;
+  margin-left: 40px;
+}
+
+.overlay-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.overlay-text p {
+  font-size: 1rem;
 }

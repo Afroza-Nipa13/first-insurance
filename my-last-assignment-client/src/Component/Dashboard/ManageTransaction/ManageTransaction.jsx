@@ -37,7 +37,7 @@ const ManageTransaction = () => {
 
     if (isLoading) return <LoadingSpinner />;
     return (
-        <div className="p-12">
+        <div className="">
             <Helmet>
                 <title>Manage Transaction | FIRST Life Insurance</title>
             </Helmet>
