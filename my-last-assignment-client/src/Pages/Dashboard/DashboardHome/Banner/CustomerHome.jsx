@@ -38,8 +38,8 @@ const CustomerHome = () => {
       <h2 className="text-4xl text-primary font-bold">Welcome back, {user?.displayName || 'Customer'}!</h2>
 
       {/* Stats */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div className="bg-base-200 p-4 rounded-lg shadow">
+      <div className="grid grid-cols-2 md:grid-cols-4 text-gray-700 gap-4">
+        <div className="bg-gray-200 p-4 rounded-lg shadow">
           <h4 className="text-lg font-semibold">Total Applied</h4>
           <p className="text-2xl">{total}</p>
         </div>
@@ -58,7 +58,7 @@ const CustomerHome = () => {
       </div>
 
       {/* Payment Summary */}
-      <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-2 gap-4 text-gray-600">
         <div className="bg-blue-100 p-4 rounded-lg shadow">
           <h4 className="text-lg font-semibold">Payments Paid</h4>
           <p className="text-2xl">{totalPaid}</p>

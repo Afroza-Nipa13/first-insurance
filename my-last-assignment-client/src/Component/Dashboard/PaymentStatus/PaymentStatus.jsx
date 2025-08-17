@@ -32,7 +32,7 @@ const PaymentStatus = () => {
                 <p className="text-center">Loading...</p>
             ) : (
                 <table className="table table-zebra w-full text-center">
-                    <thead className="bg-gray-200">
+                    <thead className="bg-base-200">
                         <tr>
                             <th>Policy</th>
                             <th>Premium Amount</th>
@@ -71,7 +71,7 @@ const PaymentStatus = () => {
 
                         {allApplications.length === 0 && (
                             <tr>
-                                <td colSpan="5">No pending payments found!</td>
+                                <td colSpan="5" className='text-4xl font-bold italic text-gray-500 my-10'>No pending payments found!</td>
                             </tr>
                         )}
                     </tbody>

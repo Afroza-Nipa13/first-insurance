@@ -114,7 +114,7 @@ const ProfilePage = () => {
             {/* Edit Form */}
             <form
                 onSubmit={handleSubmit(onSubmit)}
-                className="mt-8 bg-white p-6 rounded-lg shadow space-y-4"
+                className="mt-8 bg-base-50 p-6 rounded-lg shadow space-y-4"
             >
                 <input
                     type="text"
