@@ -19,6 +19,7 @@ const BlogCard = ({ blog }) => {
 
     return (
         <motion.div
+            data-aos="zoom-in"
             whileHover={{ scale: 1.05 }}
             transition={{ type: 'spring', stiffness: 300 }}
             className=" rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transform duration-300"
@@ -30,7 +31,7 @@ const BlogCard = ({ blog }) => {
 
                 <div className="flex justify-between items-center text-sm text-gray-500 mt-3">
                     <div className="flex items-center gap-2">
-                        <FaUser className="text-indigo-500" />
+                        <FaUser className="text-indigo-600" />
                         <span className="badge badge-outline">{author}</span>
                     </div>
                     <span>{format(new Date(publishDate), 'PPP')}</span>

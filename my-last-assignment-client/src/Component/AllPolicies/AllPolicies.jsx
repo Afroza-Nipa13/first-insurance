@@ -80,7 +80,9 @@ const AllPolicies = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
         {policies.map(policy => (
-          <div key={policy._id} className="card bg-base-100 shadow-xl border border-gray-200">
+          <div 
+          data-aos="zoom-in"
+          key={policy._id} className="card bg-base-100 shadow-xl border border-gray-200">
             <figure>
               <img src={policy.imageUrl} alt={policy.title} className="w-full h-48 object-cover" />
             </figure>

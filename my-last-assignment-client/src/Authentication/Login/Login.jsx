@@ -111,7 +111,7 @@ const Login = () => {
           <div>
             <button
               type='submit'
-              className='bg-primary w-full rounded-md py-3 text-white'
+              className='bg-primary w-full rounded-md py-3 text-white cursor-pointer'
             >
 
               Continue

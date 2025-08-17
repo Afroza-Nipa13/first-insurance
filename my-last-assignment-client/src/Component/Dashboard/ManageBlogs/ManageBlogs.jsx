@@ -147,7 +147,7 @@ const ManageBlogs = () => {
             </Helmet>
             <div className='flex flex-col justify-start'>
                 <h2 className="text-4xl text-primary font-bold  mb-6 divider">Manage My Blogs</h2>
-                <h2 className="text-4xl font-extrabold my-4 bg-amber-50 w-[400px] text-primary uppercase">{user.displayName}</h2>
+                <h2 className="text-4xl font-extrabold my-4 bg-base-200 p-3 rounded-2xl lg:w-[600px] text-primary uppercase">{user.displayName}</h2>
             </div>
             <small className='text-gray-500'>Author</small>
 

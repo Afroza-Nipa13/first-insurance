@@ -52,7 +52,7 @@ const AgentHome = () => {
         <div
             data-aos="fade-up"
             data-aos-duration="3000"
-            className="p-4">
+            className="p-4 bg-base-100">
             <h2 className="text-4xl text-primary font-bold mb-10">Welcome, <span className='text-primary'>{user?.displayName}</span>!</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
@@ -106,10 +106,10 @@ const AgentHome = () => {
             </div>
 
             {/* Optional: Quick Action Buttons */}
-            <div className="mt-10 text-center space-x-4">
-                <Link to='/dashboard/agent/manage-blogs'><button className="btn btn-primary">Manage Blogs</button></Link>
-                <Link to='/dashboard/agent/assigned-customers'><button className="btn btn-secondary">Assigned Customers</button></Link>
-                <Link to='/dashboard/agent/assigned-customers'><button className="btn btn-accent">Clearance Requests</button></Link>
+            <div className="my-10 flex flex-around text-center  space-x-4">
+                <Link to='/dashboard/agent/manage-blogs'><button className="btn btn-primary text-gray-100">Manage Blogs</button></Link>
+                <Link to='/dashboard/agent/assigned-customers'><button className="btn btn-secondary text-gray-100">Assigned Customers</button></Link>
+                <Link to='/dashboard/agent/assigned-customers'><button className="btn btn-accent text-gray-100">Clearance Requests</button></Link>
             </div>
         </div>
     );

@@ -8,7 +8,7 @@ const Scrollbar = () => {
     return (
          <button
       onClick={handleScrollToTop}
-      className="fixed bottom-4 right-4 cursor-pointer   bg-radial-[at_25%_25%] from-[#e89dbd] to-[#851143] to-75% hover:bg-[#6c0e36] text-white p-3 rounded-full shadow-lg transition-all z-50"
+      className="fixed bottom-4 right-4 cursor-pointer   bg-radial-[at_25%_25%] from-[#f299c0] to-[#851143] to-75% hover:bg-[#6c0e36] text-white lg:p-3 p-1 rounded-full shadow-lg transition-all z-50"
       title="Scroll to top"
     >
       <FaArrowUp size={20} />

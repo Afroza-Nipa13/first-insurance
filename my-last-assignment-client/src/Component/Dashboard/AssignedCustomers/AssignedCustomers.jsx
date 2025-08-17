@@ -57,7 +57,7 @@ const AssignedCustomers = () => {
 
 
     return (
-        <div className="p-4">
+        <div className="p-4  bg-base-100">
             <h2 className="text-5xl text-primary font-bold text-center mb-12 divider"> Pending Customers</h2>
 
             <div className="overflow-x-auto">
@@ -73,10 +73,10 @@ const AssignedCustomers = () => {
                     </thead>
                     <tbody>
                         {assignedCustomers.length === 0 ? (
-                            <tr>
+                            <tr className=''>
                                 <td 
                                 data-aos="fade-up"
-                                colSpan="5" className="text-center text-4xl py-10 text-gray-500 font-bold">
+                                colSpan="5" className="text-center bg-base-100 text-4xl py-10 text-gray-500 font-bold">
                                     🎉 No pending customers found.
                                 </td>
                             </tr>
